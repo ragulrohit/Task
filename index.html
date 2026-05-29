@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Banking</title>
+   </head>
+<body>
+   <header>
+    <nav class="heading">
+        <div class="logo">
+            <span>Bank</span>
+        </div>
+      
+    
+        <ul class="link">
+            
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Accounts</a></li> 
+            <li><a href="#">Loans</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+        <div class="menu-btn" id="menuBtn">☰
+           
+        </div>
+       
+    </nav>
+    
+    </header>
+  
+
+   <section class="content">
+     <div class="para"></div>
+     <div class="main-content">
+        <h3>Trusted Digital Banking</h3>
+        <h1>Smart Banking For Your <span>Future</span></h1>
+        <p>Manage your savings , transfer money securely,
+            and enjoy modern banking services anytime anywhere.
+        </p>
+        <div class="buttons">
+            <button class="press">Open Account</button>
+            <button class="learn" >Learn More</button>
+        </div>
+     </div>
+   </section>
+
+   <section class="gallery">
+
+    <h1>Banking Services Gallery</h1>
+
+    <div class="gallery-container">
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4" alt="Banking">
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Banking">
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3" alt="Banking">
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" alt="Banking">
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284" alt="Banking">
+        </div>
+
+        <div class="gallery-card">
+            <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d" alt="Banking">
+        </div>
+
+    </div>
+
+</section>
+
+   <section class="footer">
+    <div class="card">
+        <h2>Secure Payments</h2>
+        <p>Get instant personal and business loans.</p>
+    </div>
+   </section>
+
+   <section class="service">
+    <h1>Our Services</h1>
+    <div class="service-content">
+        <div class="card1">
+            <div class="icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div class="contents">
+                <h2>MObile Banking</h2>
+                <p>Access Your Account anytime anywhere with our app.</p>
+            </div>
+        </div>
+
+        <div class="card1">
+            <div class="icon">
+                <i class="fa-solid fa-credit-card"></i>
+            </div>
+            <div class="contents">
+                <h2>Credit Cards</h2>
+                <p>Enjoy Cashback and rewards with premium cards</p>
+            </div>
+        </div>
+
+          <div class="card1">
+            <div class="icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="contents">
+                <h2>Secure Banking</h2>
+                <p>Your Transcations are protected with highly security</p>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <section class="new">
+
+    <div class="box">
+        <div class="another">
+            <i class="fa-solid fa-users"></i>
+        </div>
+        <div>
+            <h2>10M</h2>
+            <p>Customers</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="another">
+            <i class="fa-solid fa-building-columns"></i>
+        </div>
+        <div>
+            <h2>500+</h2>
+            <p>Branches</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="another">
+            <i class="fa-solid fa-headset"></i>
+        </div>
+        <div>
+            <h2>24/7</h2>
+            <p>Support</p>
+        </div>
+    </div>
+   </section>
+
+   <footer>
+    <div class="footer-container">
+
+      <!-- Left Section -->
+      <div class="footer-box">
+        <h2>SecureBank</h2>
+
+        <p>
+          Trusted banking solutions with secure transactions,
+          smart investments, and 24/7 customer support.
+        </p>
+      </div>
+
+      <!-- Middle Section -->
+      
+
+      <!-- Right Section -->
+      <div class="footer-box">
+        <h2>Follow Us</h2>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+    </div>
+   </footer>
+
+ <script>
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.querySelector(".link");
+
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+</script>
+
+</body>
+</html>
