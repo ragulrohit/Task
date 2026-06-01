@@ -12,18 +12,26 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
    <header>
     <nav class="heading">
         <div class="logo">
+            
+    <a href="index.html">
+        <img src="./images/Stackly_logo.png" class="img" alt="Stackly Logo">
+    </a>
+
             <span>Bank</span>
         </div>
       
     
-        <ul class="link">
-            
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Accounts</a></li> 
-            <li><a href="#">Loans</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contacts</a></li>
-        </ul>
+    <ul class="link">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="accounts.html">Accounts</a></li>
+    <li><a href="loans.html">Loans</a></li>
+    <li><a href="Service.html">Services</a></li>
+    <li><a href="contacts.html">Contacts</a></li>
+</ul>
+ <a href="login.html" class="login-btn">
+        <i class="fa-solid fa-user"></i> Login
+    </a>
+
         <div class="menu-btn" id="menuBtn">☰
            
         </div>
@@ -41,10 +49,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         <p>Manage your savings , transfer money securely,
             and enjoy modern banking services anytime anywhere.
         </p>
-        <div class="buttons">
-            <button class="press">Open Account</button>
-            <button class="learn" >Learn More</button>
-        </div>
+       
+       <div class="buttons">
+  <a href="create-account.html" class="press">Open Account</a>
+  <a href="login.html" class="learn">Login</a>
+</div>
+           
+        
      </div>
    </section>
 
@@ -84,6 +95,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
    <section class="footer">
     <div class="card">
+         
         <h2>Secure Payments</h2>
         <p>Get instant personal and business loans.</p>
     </div>
@@ -158,46 +170,71 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
    </section>
 
    <footer>
-    <div class="footer-container">
+  <div class="footer-container">
+     <img src="./images/Stackly_logo.png" alt="Stackly Logo" class="footer-logo">
+    
 
-      <!-- Left Section -->
-      <div class="footer-box">
-        <h2>SecureBank</h2>
-
-        <p>
-          Trusted banking solutions with secure transactions,
-          smart investments, and 24/7 customer support.
-        </p>
-      </div>
-
-      <!-- Middle Section -->
-      
-
-      <!-- Right Section -->
-      <div class="footer-box">
-        <h2>Follow Us</h2>
-
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-      </div>
-
+    <!-- About Bank -->
+    <div class="footer-box">
+      <h2>SecureBank</h2>
+      <p>
+        Trusted banking solutions with secure transactions,
+        smart investments, personal loans, and 24/7 customer support.
+      </p>
     </div>
-   </footer>
 
- <script>
+    <!-- Quick Links -->
+    <div class="footer-box">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="accounts.html">Accounts</a></li>
+        <li><a href="loans.html">Loans</a></li>
+        <li><a href="Service.html">Services</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </div>
 
-const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.querySelector(".link");
+    <!-- Banking Services -->
+    <div class="footer-box">
+      <h2>Banking Services</h2>
+      <ul>
+        <li>Savings Account</li>
+        <li>Current Account</li>
+        <li>Fixed Deposits</li>
+        <li>Credit Cards</li>
+        <li>Mobile Banking</li>
+      </ul>
+    </div>
 
-menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
+    <!-- Contact Info -->
+    <div class="footer-box">
+      <h2>Contact Us</h2>
+      <p><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu</p>
+      <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fa-solid fa-envelope"></i> support@securebank.com</p>
+    </div>
 
-</script>
+    <!-- Social Media -->
+    <div class="footer-box">
+      <h2>Follow Us</h2>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2026 Stackly SecureBank. All Rights Reserved.</p>
+  </div>
+</footer>
+
+ <script src="script.js"></script>
 
 </body>
 </html>
