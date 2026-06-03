@@ -1,9 +1,17 @@
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.querySelector(".link");
 
-if(menuBtn){
+if (menuBtn && navLinks) {
     menuBtn.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
+        const isOpen = navLinks.classList.toggle("active");
+        menuBtn.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            menuBtn.setAttribute("aria-expanded", "false");
+        });
     });
 }
 
