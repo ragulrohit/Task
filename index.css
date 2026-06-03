@@ -360,7 +360,7 @@ footer{
 
 .footer-box p{
   line-height: 1.8;
-  color: #d6d6d6;
+  color: #ffffff;
   max-width: 340px;
   font-size: 17px;
 }
@@ -450,7 +450,7 @@ footer{
 
 .feature-card{
     display:flex;
-    gap:25px;
+    /* gap:25px; */
     padding:30px;
     border-radius:20px;
     transition:.4s;
@@ -970,7 +970,7 @@ body{
     margin:auto;
 
     display:grid;
-    grid-template-columns:2fr 1fr 1fr 1.5fr;
+    grid-template-columns:3fr 1fr ;
     gap:60px;
 }
 
@@ -1080,7 +1080,7 @@ body{
      font-family: 'Inter', sans-serif;
     font-size:20px;
     font-weight:400;
-    color:#c76d6dbd;
+    color:#edeaeabd;
     line-height:1.8;
     max-width:700px;
     font-style:italic;
@@ -1275,6 +1275,7 @@ body{
 
 @media(max-width:480px){
 
+    
     .logo{
         font-size: 30px;
     }
@@ -1324,7 +1325,7 @@ body{
     .heading{
         gap: 14px;
         flex-wrap: wrap;
-        padding: 16px 20px;
+        /* padding: 16px 20px; */
     }
 
     .login-btn{
@@ -1372,3 +1373,4 @@ body{
         grid-template-columns:1fr;
     }
 }
+
